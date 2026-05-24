@@ -68,6 +68,9 @@
     "vm.max_map_count" = 2147483642; # Защита тяжелых игр от вылетов
   };
 
+  # Flatpak — нужен для Sober (Roblox)
+  services.flatpak.enable = true;
+
   # Пользователь Kirill
   users.users.kirill = {
     isNormalUser = true;
@@ -103,6 +106,13 @@
     # Повседневный софт
     firefox
     telegram-desktop
+
+    # Minecraft
+    prismlauncher
+
+    # Системные утилиты
+    pavucontrol             # Управление громкостью
+    brightnessctl           # Управление яркостью экрана
   ];
 
   # Оптимизация памяти Nix-хранилища
